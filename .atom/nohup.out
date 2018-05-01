@@ -1,0 +1,4 @@
+Error trashing file: Unable to find or create trash directory
+Attempting to call a function in a renderer window that has been closed or released.
+Function provided here: worker.js:71:22
+Remote event names: destroyed, crashed

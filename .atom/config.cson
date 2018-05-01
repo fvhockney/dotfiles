@@ -1,0 +1,74 @@
+"*":
+  "atom-beautify":
+    executables:
+      php:
+        path: "/usr/bin/php"
+      "php-cs-fixer":
+        path: "/usr/local/bin/php-cs-fixer"
+    php: {}
+  "atom-updater-linux":
+    checkStartup: false
+  "autoclose-html":
+    makeNeverCloseSelfClosing: false
+  core:
+    audioBeep: false
+    disabledPackages: [
+      "welcome"
+      "background-tips"
+      "wrap-guide"
+    ]
+    excludeVcsIgnoredPaths: false
+    ignoredNames: [
+      ".git"
+      ".hg"
+      ".svn"
+      ".DS_Store"
+      "._* Thumbs.db"
+      "desktop.ini"
+    ]
+    packagesWithKeymapsDisabled: [
+      "hyperclick"
+    ]
+    telemetryConsent: "no"
+  editor:
+    fontSize: 10
+    preferredLineLength: 150
+    softWrap: true
+    softWrapAtPreferredLineLength: true
+  "exception-reporting":
+    userId: "101d3433-a94b-4314-a510-30811b1d19b5"
+  "markdown-preview":
+    useGitHubStyle: true
+  minimap:
+    plugins:
+      pigments: true
+      pigmentsDecorationsZIndex: 0
+  "platformio-ide-terminal":
+    style:
+      theme: "dracula"
+  "spell-check":
+    grammars: [
+      "source.asciidoc"
+      "source.gfm"
+      "text.git-commit"
+      "text.plain"
+      "text.plain.null-grammar"
+      "text.html.php.blade"
+    ]
+    locales: [
+      "en-US"
+    ]
+  "terminal-plus":
+    style:
+      theme: "dracula"
+  "tree-view": {}
+  wordcount:
+    currencysymbol: "€"
+    goal: 1500
+    ignorecode: true
+    showprice: true
+    wordprice: "0.10"
+".blade.html.php.text":
+  editor:
+    commentEnd: " --}}"
+    commentStart: "{{-- "
