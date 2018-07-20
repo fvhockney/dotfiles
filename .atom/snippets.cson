@@ -19,3 +19,20 @@
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#_cson
+
+'.source.php':
+  'phpdoc':
+    'prefix': 'phpdoc'
+    'body': """
+    /**
+    * ${1:Description Short}
+    *
+    * ${2:Description Long}
+    *
+    * @param ${3:type} ${4:variable} ${5:description}
+    * @return ${6: type|void}
+    */
+    """
+  '@param':
+    'prefix': 'param'
+    'body': '* @param ${3:type} ${4:variable} ${5:description}'

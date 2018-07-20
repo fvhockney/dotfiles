@@ -1,21 +1,48 @@
 "*":
   "atom-beautify":
     executables:
-      php:
-        path: "/usr/bin/php"
+      php: {}
       "php-cs-fixer":
         path: "/usr/local/bin/php-cs-fixer"
+    js:
+      break_chained_methods: true
+      end_with_comma: true
+      space_in_paren: true
+    latex:
+      indent_preamble: true
+      remove_trailing_whitespace: true
     php: {}
+    scss:
+      align_assignments: true
+      convert_quotes: "single"
+      no_lead_zero: true
+    vue:
+      brace_style: "end-expand"
+      break_chained_methods: true
+      end_with_comma: true
+      indent_inner_html: true
+      object_curly_spacing: true
+      space_in_paren: true
+      unescape_strings: true
+  "atom-ide-ui":
+    use:
+      "atom-ide-code-format": "always"
+  "atom-latex":
+    build_after_save: false
+  "atom-runner":
+    paneSplitDirection: "Down"
   "atom-updater-linux":
     checkStartup: false
   "autoclose-html":
     makeNeverCloseSelfClosing: false
   core:
     audioBeep: false
+    closeDeletedFileTabs: true
     disabledPackages: [
       "welcome"
       "background-tips"
       "wrap-guide"
+      "atom-latex"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -66,6 +93,7 @@
     currencysymbol: "€"
     goal: 1500
     ignorecode: true
+    noextension: true
     showprice: true
     wordprice: "0.10"
 ".blade.html.php.text":

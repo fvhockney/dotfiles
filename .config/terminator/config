@@ -16,7 +16,7 @@
       parent = ""
       position = 0:19
       size = 683, 749
-      title = vern@vern-HP-350-G2: ~
+      title = ""
       type = Window
     [[[terminal1]]]
       order = 0
@@ -44,15 +44,15 @@
 [profiles]
   [[default]]
     background_darkness = 0.84
-    background_image = None
     background_type = transparent
+    cursor_color = "#aaaaaa"
     cursor_shape = underline
     font = InconsolataN 10
+    login_shell = True
     scrollbar_position = hidden
     show_titlebar = False
   [[scratch]]
     background_darkness = 0.78
-    background_image = None
     background_type = transparent
     cursor_shape = underline
     scrollbar_position = hidden

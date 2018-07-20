@@ -1,8 +1,7 @@
-blob-store
-compile-cache
-dev
-storage
-.apm
-.node-gyp
-.npm
-packages
+*
+!.gitignore
+!.config.cson
+!init.coffee
+!keymap.cson
+!snippets.cson
+!styles.less
