@@ -1,9 +1,11 @@
 "*":
   "atom-beautify":
     executables:
-      php: {}
+      php:
+        path: "/usr/bin/php"
       "php-cs-fixer":
         path: "/usr/local/bin/php-cs-fixer"
+    general: {}
     js:
       break_chained_methods: true
       end_with_comma: true
@@ -27,14 +29,20 @@
   "atom-ide-ui":
     use:
       "atom-ide-code-format": "always"
+      "atom-ide-code-highlight": "always"
+      "atom-ide-datatip": "always"
+      "atom-ide-definitions": "always"
+      "atom-ide-find-references": "always"
+      "atom-ide-outline-view": "always"
+      "atom-ide-refactor": "always"
+      hyperclick: "always"
   "atom-latex":
     build_after_save: false
   "atom-runner":
     paneSplitDirection: "Down"
   "atom-updater-linux":
     checkStartup: false
-  "autoclose-html":
-    makeNeverCloseSelfClosing: false
+  "autoclose-html": {}
   core:
     audioBeep: false
     closeDeletedFileTabs: true
@@ -42,7 +50,7 @@
       "welcome"
       "background-tips"
       "wrap-guide"
-      "atom-latex"
+      "vim-mode-plus"
     ]
     excludeVcsIgnoredPaths: false
     ignoredNames: [
@@ -53,23 +61,23 @@
       "._* Thumbs.db"
       "desktop.ini"
     ]
-    packagesWithKeymapsDisabled: [
-      "hyperclick"
-    ]
     telemetryConsent: "no"
   editor:
-    fontSize: 10
     preferredLineLength: 150
     softWrap: true
     softWrapAtPreferredLineLength: true
   "exception-reporting":
     userId: "101d3433-a94b-4314-a510-30811b1d19b5"
+  "ide-php":
+    phpPath: "/usr/bin/php"
   "markdown-preview":
     useGitHubStyle: true
   minimap:
     plugins:
       pigments: true
       pigmentsDecorationsZIndex: 0
+  phpunit:
+    displayInTextBuffer: true
   "platformio-ide-terminal":
     style:
       theme: "dracula"
@@ -89,6 +97,12 @@
     style:
       theme: "dracula"
   "tree-view": {}
+  "vim-mode-plus":
+    automaticallyEscapeInsertModeOnActivePaneItemChange: true
+    clearMultipleCursorsOnEscapeInsertMode: true
+    findAcrossLines: true
+    hideCommandsFromCommandPalette: true
+    useSmartcaseForFind: true
   wordcount:
     currencysymbol: "€"
     goal: 1500
