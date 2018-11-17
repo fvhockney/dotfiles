@@ -1,6 +1,17 @@
 set nocompatible
 
 runtime! debian.vim
+
+let installVundle=1
+let vundle_readme=expand('~/.vim/bundle/Vundle.vim/README.md')
+if !filereadable(vundle_readme)
+    echo "Installing Vundle..."
+    echo ""
+    silent !mkdir -p ~/.vim/bundle
+    silent !git clone https://github.com/VundleVim/Vundle.vim ~/.vim/bundle/Vundle.vim
+    let installVundle=0
+endif
+
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -21,6 +32,12 @@ Plugin 'scrooloose/nerdtree'
 " Plugin 'valloric/youcompleteme'
 " Plugin 'vim-latex/vim-latex'
 " Plugin 'xuhdev/vim-latex-live-preview'
+
+if installVundle == 0
+    echo "Installing Vundles, please ignore keymap error messages"
+    echo ""
+    :PluginInstall
+endif
 
 call vundle#end()
 set laststatus=2
