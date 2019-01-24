@@ -1,0 +1,52 @@
+set modeline
+set modelines=5
+set showcmd
+set showmatch
+set ignorecase
+set smartcase
+set incsearch
+set hlsearch
+set clipboard=unnamed
+
+set nowritebackup "needed for watch tasks
+
+" Show numbers
+set nu
+set linebreak
+set wrap
+set wildmenu
+set lazyredraw
+
+" Show relative numbers
+set rnu
+
+" Tabbing and Spaces
+set tabstop=8
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+set autoindent
+set smartindent
+
+set backspace=indent,eol,start
+set nostartofline
+set visualbell
+set confirm
+set mouse=a
+set background=dark
+set t_Co=256
+set laststatus=2
+
+let mapleader=","
+" NEEDS TO BE SET ACCORDING TO ENVIRONMENT VARIABLE
+"let g:livepreview_previewer = 'atril'
+
+filetype plugin indent on
+syntax on
+autocmd FileType vue syntax sync fromstart
+autocmd BufNewFile,BufRead *.vue set ft=vue
+autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0 
+let g:vue_disable_pre_processors=1
+
+" Editorconfig settings
+let g:EditorConfig_exec_path='/sbin/editorconfig'
