@@ -1,6 +1,7 @@
 application/pdf; ~/bin/mutt_bgrun xpdf '%s';
 x-unknown/pdf; ~/bin/mutt_bgrun xpdf '%s';
 
+text/html; /usr/bin/firefox %s > /dev/null 2>&1; needsterminal
 text/html; w3m -I %{charset} -O 'UTF-8' -T text/html -graph -o alt_entity=0 -dump %s; copiousoutput
 application/msword; ~/bin/mutt_bgrun /usr/bin/libreoffice '%s'; test=test -n "$DISPLAY"; nametemplate=%s.doc
 application/vnd.openxmlformats-officedocument.wordprocessingml.document; ~/bin/mutt_bgrun /usr/bin/libreoffice '%s'; test=test -n "$DISPLAY"; nametemplate=%s.docx
