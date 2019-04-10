@@ -10,7 +10,7 @@ URxvt*scrollTtyKeypress: true
 URxvt.secondaryScreen: 1
 URxvt.secondaryScroll: 0
 
-URxvt.font: xft:inconsolata:size=14
+URxvt.font: xft:inconsolata:size=13
 Urxvt.letterSpace: -1
 
 ! Disable printing the termianl contents when pressing PrintScreen

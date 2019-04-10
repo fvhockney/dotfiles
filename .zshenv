@@ -10,3 +10,4 @@ export EDITOR=vim
 export VISUAL=vim
 export XDG_CONFIG_HOME="$HOME/.config"
 export ZSH="$HOME/.oh-my-zsh"
+export NVM_DIR="${XDG_CONFIG_HOME}/nvm"
