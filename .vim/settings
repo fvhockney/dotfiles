@@ -45,6 +45,7 @@ filetype plugin indent on
 syntax on
 autocmd FileType vue syntax sync fromstart
 autocmd BufNewFile,BufRead *.vue set ft=vue
+autocmd BufNewFile *.vue 0r ~/.vim/templates/skeleton.vue
 autocmd FileType make set noexpandtab shiftwidth=8 softtabstop=0 
 let g:vue_disable_pre_processors=1
 
@@ -67,4 +68,7 @@ let g:NERDTreeIndicatorMapCustom = {
     \ 'Ignored'   : '☒',
     \ "Unknown"   : "?"
     \ }
+
+" CtlP
+let g:ctrlp_custom_ignore = '\v[\/](\.git|node_modules)$'
 
