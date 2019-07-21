@@ -25,7 +25,8 @@ Plug 'airblade/vim-gitgutter'
 Plug 'jiangmiao/auto-pairs'
 Plug 'w0rp/ale'
 Plug 'editorconfig/editorconfig-vim'
-" Plugin 'junegunn/fzf'
+Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'branch install.sh' }
+Plug 'junegunn/fzf'
 " Plugin 'junegunn/fzf.vim'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'scrooloose/nerdtree-git-plugin', { 'on': 'NERDTreeToggle' }
