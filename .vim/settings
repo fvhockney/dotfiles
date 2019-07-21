@@ -68,3 +68,13 @@ let g:NERDTreeIndicatorMapCustom = {
     \ "Unknown"   : "?"
     \ }
 
+" CtlP
+let g:ctrlp_custom_ignore = '\v[\/](\.git|node_modules)$'
+
+" gutentags_plug & gutentags
+"let g:gutentags_cache_dir = expand('~/.cache/tags')
+"let g:gutentags_modules = ['ctags', 'gtags_cscope']
+"let g:gutentags_project_root = ['.root','.git']
+"let g:gutentags_ctags_exclude = [ '@.gitignore', 'lib', 'dist', 'package.json', 'package-lock.json' ]
+
+" vim: set ft=vim:
