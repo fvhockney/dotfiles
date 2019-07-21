@@ -69,12 +69,13 @@ let g:NERDTreeIndicatorMapCustom = {
     \ }
 
 " CtlP
-let g:ctrlp_custom_ignore = '\v[\/](\.git|node_modules)$'
+let g:ctrlp_custom_ignore = '\v[\/](\.git|node_modules|lib|dist|vendor)$'
 
 " LSP
 set hidden
 let g:LanguageClient_serverCommands = {
     \ 'javascript': ['javascript-typescript-stdio'],
+    \ 'vue': ['vls'],
     \ }
 " if executable('javascript-typescript-stdio')
 "     let g:LanguageClient_serverCommands['javascript'] = exepath('javascript-typescript-stdio')
