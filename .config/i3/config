@@ -113,7 +113,7 @@ bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
 # specific workspaces
-bindsym $mod+m workspace mutt 
+bindsym $mod+m workspace mutt
 bindsym $mod+c workspace cal
 bindsym $mod+i workspace irssi
 
