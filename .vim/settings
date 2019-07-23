@@ -73,6 +73,8 @@ let g:NERDTreeIndicatorMapCustom = {
 " CtlP
 let g:ctrlp_custom_ignore = '\v[\/](\.git|node_modules|lib|dist|vendor)$'
 
+" Deoplete Settings
+
 " LSP
 set hidden
 let g:LanguageClient_serverCommands = {
