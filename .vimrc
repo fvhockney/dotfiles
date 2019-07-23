@@ -36,6 +36,13 @@ Plug 'vim-latex/vim-latex', { 'for': 'tex' }
 " Plugin 'xuhdev/vim-latex-live-preview'
 "Plug 'ludovicchabant/vim-gutentags'
 "Plug 'skywind3000/gutentags_plus'
+if has('nvim')
+    Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+    Plug 'Shougo/deoplete.nvim'
+    Plug 'roxma/nvim-yarp'
+    Plug 'roxma/vim-hug-neovim-rpc'
+endif
 call plug#end()
 
 

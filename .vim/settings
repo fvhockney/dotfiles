@@ -7,6 +7,7 @@ set smartcase
 set incsearch
 set hlsearch
 set clipboard=unnamed
+set encoding=utf-8
 
 set nowritebackup "needed for watch tasks
 
@@ -81,6 +82,13 @@ let g:LanguageClient_serverCommands = {
 " if executable('javascript-typescript-stdio')
 "     let g:LanguageClient_serverCommands['javascript'] = exepath('javascript-typescript-stdio')
 " endif
+
+" python path for deoplete and yarp
+set pyxversion=3
+let g:python3_host_prog = exepath('python3')
+
+" deoplete
+let g:deoplete#enable_at_startup = 1
 
 " gutentags_plug & gutentags
 "let g:gutentags_cache_dir = expand('~/.cache/tags')
